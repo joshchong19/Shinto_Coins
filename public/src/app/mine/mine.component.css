@@ -1,0 +1,16 @@
+h1, .balance{
+    display: inline-block;
+}
+
+.balance{
+    margin-left: 300px;
+    text-align: right;
+}
+
+.btn{
+    margin: 15px;
+}
+
+.error{
+    color: red;
+}

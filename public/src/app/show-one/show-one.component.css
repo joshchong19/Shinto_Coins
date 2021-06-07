@@ -1,0 +1,7 @@
+h1, .btn{
+    display: inline-block;
+}
+
+.btn{
+    margin-left: 300px;
+}

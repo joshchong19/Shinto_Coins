@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class = "content">
+
+        <h1>Browse the Ledger!</h1>
+        <p>Here you can browse all ShintoCoin transactions</p>
+
+        <table class = "table table-striped">
+            <tr>
+                <th scope = "col">Transaction #</th>
+                <th scope = "col">Action</th>
+                <th scope = "col">Amount</th>
+                <th scope = "col">Details</th>
+            </tr>
+            <tr *ngFor = "let trans of history">
+                <td>{{ trans.id }}</td>
+                <td>{{ trans.action }}</td>
+                <td>{{ trans.amount }}</td>
+                <td><button class = "btn btn-info" (click)="showOne(trans.id)">Show</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

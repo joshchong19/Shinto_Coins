@@ -1,0 +1,8 @@
+h1, .balance{
+    display: inline-block;
+}
+
+.balance{
+    text-align: right;
+    margin-left: 500px;
+}
